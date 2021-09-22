@@ -14,7 +14,7 @@ public class MyMain {
     // Finds the second largest number in an array
     public static int secondLargest(int[] arr) {
         int largest = arr[0];
-        int seclargest = -2147483648;
+        int seclargest = Integer.MIN_VALUE;
         for(int i = 0;i<arr.length;i++){
             largest = Math.max(largest,arr[i]);
         }
